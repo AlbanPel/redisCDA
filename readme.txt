@@ -61,7 +61,7 @@
     set key 20
     TTL key
     (return -1)
-    expire 10
+    expire key 10
     get key
     (return 20)
     get key (after 10 sec)
